@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+
+<hibernate-mapping package="com.dyl.shop.user.vo">
+
+	<!-- id标签表示主键，第一个id表示类中的属性，第二个column的id表示的是表中的id与之对应 native表示主键自增长 下面的name和上面这个id作用相同，如果不写长度默认是255 -->
+	<class name="User" table="user">
+		<id name="uid">
+			<column name="uid" />
+			<generator class="native"></generator>
+		</id>
+		<property name="username" />
+		<property name="password" />
+		<property name="name" />
+		<property name="email" />
+		<property name="phone" />
+		<property name="addr" />
+		<property name="state" />
+		<property name="code" />
+
+
+<set name="orders" cascade="delete">
+			<key column="uid"/>
+			<one-to-many class="com.dyl.shop.order.vo.Order"/>
+		</set>
+
+	</class>
+
+
+</hibernate-mapping>

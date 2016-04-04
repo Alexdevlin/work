@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.dyl.shop.category.vo">
+
+	<!-- id标签表示主键，第一个id表示类中的属性，第二个column的id表示的是表中的id与之对应 native表示主键自增长 下面的name和上面这个id作用相同，如果不写长度默认是255 -->
+	<class name="Category" table="category">
+
+		<id name="cid">
+			<generator class="native" />
+		</id>
+
+		<property name="cname" />
+
+		<!-- 配置二级分类的集合 -->
+		 <set order-by="csid" name="categorySeconds" cascade="delete" lazy="false">
+		  <key column="cid"/> 
+			<one-to-many class="com.dyl.shop.categorysecond.vo.CategorySecond"/> </set>
+		
+
+	</class>
+
+
+</hibernate-mapping>

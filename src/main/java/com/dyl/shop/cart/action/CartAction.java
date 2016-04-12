@@ -18,7 +18,6 @@ import com.opensymphony.xwork2.ActionSupport;
  * 2015-9-6 上午7:08:08
  *
  */
-
 @Controller
 @Scope("prototype") 
 public class CartAction extends ActionSupport {

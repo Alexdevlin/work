@@ -320,7 +320,7 @@ div.index .hotProduct .title {
 	float: left;
 	margin-bottom: 10px;
 	/* background: url(../images/index.gif) 0px -150px no-repeat; */
-	background-color: #825996;
+	background-color: #00fa9a;
 }
 
 div.index .hotProduct .title strong {
@@ -348,7 +348,7 @@ div.index .hotProduct .tab {
 	margin-bottom: 10px;
 	overflow: hidden;
 	/* background: url(../images/index.gif) 0px -210px repeat-x; */
-	background-color: #825996;
+	background-color: #00fa9a;
 }
 
 div.index .hotProduct .tab li {
@@ -366,7 +366,7 @@ div.index .hotProduct .tab li {
 
 div.index .hotProduct .tab li.current {
 	font-weight: bold;
-	background-color: #825996;
+	background-color: #00fa9a;
 }
 
 div.index .hotProduct .hotProductAd {
@@ -413,7 +413,7 @@ div.index .newProduct .title {
 	float: left;
 	margin-bottom: 10px;
 	/* background: url(../images/index.gif) 0px -270px no-repeat; */
-	background-color: #AB7156;
+	background-color: #ff4500;
 
 }
 
@@ -442,7 +442,7 @@ div.index .newProduct .tab {
 	margin-bottom: 10px;
 	overflow: hidden;
 	/* background: url(../images/index.gif) 0px -330px repeat-x; */
-	background-color: #AB7156;
+	background-color: #ff4500;
 }
 
 div.index .newProduct .tab li {
@@ -459,7 +459,7 @@ div.index .newProduct .tab li {
 
 div.index .newProduct .tab li.current {
 	font-weight: bold;
-	background-color: #AB7156;
+	background-color: #ff4500;
 }
 
 div.index .newProduct .newProductAd {

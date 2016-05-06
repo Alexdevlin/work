@@ -826,7 +826,7 @@ div.header .phone strong {
 div.header .mainNav {
 	height: 36px;
 	overflow: hidden;
-	background-color: #1d1d1d;
+	background-color: #770077;
 }
 
 div.header .mainNav li {
@@ -843,7 +843,7 @@ div.header .mainNav li:hover {
 
 div.header .mainNav li a {
 	margin: 0px 20px;
-	color: #e7e7e7;
+	color: #00ffff;
 	font-size: 14px;
 }
 
